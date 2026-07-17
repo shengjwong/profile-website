@@ -1,25 +1,18 @@
-# Wong Sheng Jie Profile Website
+const year = document.querySelector("#year");
 
-This is a static personal profile website.
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
-## Files to upload to GitHub
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const target = document.querySelector(link.getAttribute("href"));
 
-Upload all files in this folder:
+    if (!target) {
+      return;
+    }
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/profile-visual.png`
-
-## Free hosting with GitHub Pages
-
-1. Create a GitHub repository named `profile-website`.
-2. Upload all files from this folder to the repository.
-3. Go to repository `Settings` > `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select branch `main` and folder `/root`.
-6. Save.
-
-Your website will be available at:
-
-`https://shengjwong.github.io/profile-website/`
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
