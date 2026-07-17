@@ -1,25 +1,176 @@
-# Wong Sheng Jie Profile Website
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wong Sheng Jie | Profile</title>
+    <meta
+      name="description"
+      content="Wong Sheng Jie's profile website with education, programming skills, projects, and contact information."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">WSJ</span>
+        <span>Wong Sheng Jie</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-This is a static personal profile website.
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Information Technology Student</p>
+          <h1 id="hero-title">Hi, I'm Wong Sheng Jie.</h1>
+          <p class="lead">
+            I am a Diploma in Information Technology student at Tunku Abdul
+            Rahman University of Management and Technology, focused on web
+            development, full-stack projects, and practical software systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Contact Me</a>
+            <a class="button secondary" href="#projects">View Projects</a>
+          </div>
+        </div>
 
-## Files to upload to GitHub
+        <figure class="profile-visual">
+          <img src="assets/profile-visual.png" alt="Abstract profile portrait for Wong Sheng Jie">
+          <figcaption>
+            Full-stack learner building web applications with C#, ASP.NET Core,
+            JavaScript, PHP, and SQL.
+          </figcaption>
+        </figure>
+      </section>
 
-Upload all files in this folder:
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div>
+          <p class="section-label">About</p>
+          <h2 id="about-title">Building practical web systems while growing as a developer.</h2>
+        </div>
+        <div class="section-body">
+          <p>
+            I am currently pursuing a Diploma in Information Technology with a
+            GPA of 3.20. My work focuses on responsive frontends, backend logic,
+            database-driven systems, and AI-assisted workflow automation. I am
+            interested in internship opportunities where I can contribute to real
+            software projects and keep improving my development skills.
+          </p>
+          <dl class="info-grid">
+            <div>
+              <dt>Location</dt>
+              <dd>Kuala Lumpur, Malaysia</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd>shengjwong@gmail.com</dd>
+            </div>
+            <div>
+              <dt>Education</dt>
+              <dd>Diploma in Information Technology, TAR UMT</dd>
+            </div>
+            <div>
+              <dt>Available For</dt>
+              <dd>Internships, web projects, collaboration</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `assets/profile-visual.png`
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="section-label">Skills</p>
+          <h2 id="skills-title">Programming skills</h2>
+        </div>
+        <div class="skill-list">
+          <article class="skill-card">
+            <span class="skill-icon">01</span>
+            <h3>Languages</h3>
+            <p>C#, HTML, CSS, JavaScript, PHP, and SQL.</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">02</span>
+            <h3>Frameworks & Tools</h3>
+            <p>.NET 10, ASP.NET Core MVC, Visual Studio, VS Code, Git, and GitHub.</p>
+          </article>
+          <article class="skill-card">
+            <span class="skill-icon">03</span>
+            <h3>Coursework Focus</h3>
+            <p>Web development, OOP, DBMS, data structures, networks, and operating systems.</p>
+          </article>
+        </div>
+      </section>
 
-## Free hosting with GitHub Pages
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="section-label">Projects & Hackathons</p>
+          <h2 id="projects-title">Selected work</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-meta">Full-Stack Developer | July 2026</div>
+            <h3>TCG Online E-Commerce Platform</h3>
+            <p>
+              Designed a responsive trading card storefront with product grids,
+              filters, inventory previews, live search, cart calculation, image
+              modals, PHP sessions, product management, and mock checkout logic.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Backend / Full-Stack Developer | Feb. 2026</div>
+            <h3>Cinema Ticketing System</h3>
+            <p>
+              Built a dynamic movie ticketing web application with C# and
+              ASP.NET Core MVC, including ticket validation, seat selection,
+              showtime tracking, models, controllers, and views.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">AI Developer / Participant | July 2026</div>
+            <h3>Autonomous AI Employee Agent</h3>
+            <p>
+              Created an AI workforce agent for the Supervity Hackathon using
+              language model APIs, contextual prompts, memory structures,
+              semantic guardrails, and mock corporate tool integrations.
+            </p>
+          </article>
+        </div>
+      </section>
 
-1. Create a GitHub repository named `profile-website`.
-2. Upload all files from this folder to the repository.
-3. Go to repository `Settings` > `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select branch `main` and folder `/root`.
-6. Save.
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title">Let's connect.</h2>
+          <p>
+            I am open to internship opportunities, collaboration, and project
+            conversations.
+          </p>
+        </div>
+        <div class="contact-links" aria-label="Contact links">
+          <a href="mailto:shengjwong@gmail.com">shengjwong@gmail.com</a>
+          <a href="tel:+60123098503">+60 12-309 8503</a>
+          <a href="https://github.com/shengjwong" target="_blank" rel="noreferrer">github.com/shengjwong</a>
+        </div>
+      </section>
+    </main>
 
-Your website will be available at:
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Wong Sheng Jie. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </footer>
 
-`https://shengjwong.github.io/profile-website/`
+    <script src="script.js"></script>
+  </body>
+</html>
